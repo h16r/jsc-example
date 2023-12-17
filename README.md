@@ -20,7 +20,7 @@ The codebase has two branches:
 * `main`
 * `feature`
 
-The feature branch contains a commit that removes a public class from the package (**breaking change!**)
+The project is structured like a simple maven project and contains one public class. The feature branch contains a commit that removes the public class (**breaking change!**)
 
 The java-semver-checker maven plugin is [configured](https://github.com/trpouh/jsc-example/blob/main/pom.xml#L24) to check the current git `ref` (commit, branch, tag) against the `main` ref.
 
