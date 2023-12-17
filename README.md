@@ -22,7 +22,7 @@ The codebase has two branches:
 
 The feature branch contains a commit that removes a public class from the package (**breaking change!**)
 
-The java-semver-checker maven plugin is configured to check the current git `ref` (commit, branch, tag) against the `main` ref.
+The java-semver-checker maven plugin is [configured](https://github.com/trpouh/jsc-example/blob/main/pom.xml#L24) to check the current git `ref` (commit, branch, tag) against the `main` ref.
 
 ```xml
 <configuration>
@@ -30,7 +30,7 @@ The java-semver-checker maven plugin is configured to check the current git `ref
 </configuration>
 ```
 
-it is also configured to be executed in the `verify` phase of the maven project.
+it is also [configured](https://github.com/trpouh/jsc-example/blob/main/pom.xml#L32) to be executed in the `verify` phase of the maven project.
 
 ```xml
 <executions>
