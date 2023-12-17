@@ -1,4 +1,4 @@
-This project showcases the integration and configuration of the [java-semver-checker](https://github.com/trpouh/java-semver-checker) maven plugin. To try it out for yourself simply clone the repository and `verify`:
+This project showcases the integration and configuration of the [java-semver-checker](https://github.com/trpouh/java-semver-checker) maven plugin. To try it out for yourself simply clone the repository and run the following commands:
 
 ```sh
 git clone https://github.com/trpouh/jsc-example.git
