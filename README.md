@@ -1,5 +1,20 @@
 This project showcases the integration and configuration of the [java-semver-checker](https://github.com/trpouh/java-semver-checker) maven plugin. To try it out for yourself simply clone the repository and `verify`:
 
+```sh
+git clone https://github.com/trpouh/jsc-example.git
+cd jsc-example
+
+# non breaking
+mvn verify
+
+# breaking
+git checkout feature
+mvn verify
+
+# breaking - CLI
+mvn semver-checker:check -Dbaseline.ref=main -Dcurrent.ref=feature 
+```
+
 The codebase has two branches:
 
 * `main`
