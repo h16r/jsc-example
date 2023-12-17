@@ -1,6 +1,13 @@
 This project showcases the integration and configuration of the [java-semver-checker](https://github.com/trpouh/java-semver-checker) maven plugin. To try it out for yourself simply clone the repository and run the following commands:
 
 ```sh
+#if not already done, install plugin
+git clone https://github.com/trpouh/java-semver-checker.git
+cd java-semver-checker
+mvn install
+cd..
+
+# install the project
 git clone https://github.com/trpouh/jsc-example.git
 cd jsc-example
 
@@ -20,7 +27,7 @@ The codebase has two branches:
 * `main`
 * `feature`
 
-The project is structured like a simple maven project and contains one public class. The feature branch contains a commit that removes the public class (**breaking change!**)
+The project is structured like a standard maven project and contains one public class. The feature branch contains a commit that removes the public class (**breaking change!**)
 
 The java-semver-checker maven plugin is [configured](https://github.com/trpouh/jsc-example/blob/main/pom.xml#L24) to check the current git `ref` (commit, branch, tag) against the `main` ref.
 
